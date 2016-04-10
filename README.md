@@ -1,7 +1,7 @@
 # UML-Parser
 A Parser which converts Java Source Code into a  UML Diagram.
 
-<b>Requirements</b>
+<b>Tools and Libraries Used</b>
 
 <b><i>1. Programming Languages</i></b>
 
@@ -24,19 +24,23 @@ central repository in which all its components and dependencies are published. T
 can be downloaded easily when needed. 
 
 ● <b>Java Parser GitHub Code:</b>  
-○ https://github.com/javaparser/javaparser 
-○ Jar File: Javaparser­core­2.3.0.jar 
-○ This code is used to parse Java Source Code. Like Maven Central, it contains 
+<ul>
+<li>https://github.com/javaparser/javaparser</li> 
+<li>Jar File: Javaparser­core­2.3.0.jar</li> 
+<li>This code is used to parse Java Source Code. Like Maven Central, it contains 
 project binaries. Maven Project has been created, and dependencies of this tool 
-have been added to POM.xml file 
+have been added to POM.xml file</li>
+</ul>
 
 ● <b>Plant UML</b> 
-○ http://plantuml.com/ 
-○ Jar File : plantuml.jar 
-○ Java Source Code UML diagram is generated using this tool. Graphviz software 
+<ul>
+<li>http://plantuml.com/ </li>
+<li>Jar File : plantuml.jar </li>
+<li>Java Source Code UML diagram is generated using this tool. Graphviz software 
 is required to use this tool and generate diagrams. Graphviz must be installed in 
 the default directory of your system. 
-c:\Program Files\GraphvizX.XX (Windows) or /usr/bin/do
+c:\Program Files\GraphvizX.XX (Windows) or /usr/bin/do </li>
+</ul>
 
 <b>Note : All the above libraries are included in the project. You dont need to download anything.</b>
 
