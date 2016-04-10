@@ -46,8 +46,22 @@ How to run this project via Command Line?
 Files\GraphvizX.XX (Windows) or /usr/bin/dot (Ubuntu). Graphviz is used to generate UML 
 diagrams
 
+for Ubuntu
+
 2. Naviage to the folder with the file runTestCases.sh inside testcases.
 
 3. ./runTestCases.sh to run the testcases.
 
 4. You can see the output in folders result* for each testcase. 
+
+For Windows
+
+2. Navigate to testcases folder
+
+3. Run the following commands
+
+	a. java -jar ../UMLParser.jar test1 ../result1/output1
+	b. java -jar ../UMLParser.jar test2 ../result2/output2
+	c. java -jar ../UMLParser.jar test3 ../result3/output3
+	d. java -jar ../UMLParser.jar test4 ../result4/output4
+	e. java -jar ../UMLParser.jar test5 ../result5/output5

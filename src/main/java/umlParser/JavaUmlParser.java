@@ -55,7 +55,7 @@ public class JavaUmlParser {
 		String outFile = (dir_name + "/" + output_file_name + ".txt");
 
 		PlantUmlGenerator diagramUML = new PlantUmlGenerator();
-		File dir = new File(dir_name);
+		File dir = new File(dir_name);		
 
 		try {
 			File oFile = new File(outFile);
