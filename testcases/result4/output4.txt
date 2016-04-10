@@ -1,0 +1,45 @@
+@startuml
+class ConcreteObserver {
++ ConcreteObserver(theSubject : ConcreteSubject)
++ update(  ) : void
++ showState(  ) : void
+}
+class TheEconomy {
++ TheEconomy()
+}
+class Subject {
++ attach( obj : Observer ) : void
++ detach( obj : Observer ) : void
++ notifyObservers(  ) : void
+}
+class Optimist {
++ Optimist(sub : ConcreteSubject)
++ update(  ) : void
+}
+class Pessimist {
++ Pessimist(sub : ConcreteSubject)
++ update(  ) : void
+}
+class Observer {
++ update(  ) : void
+}
+class ConcreteSubject {
+- subjectState : String
++ getState(  ) : String
++ setState( status : String ) : void
++ attach( obj : Observer ) : void
++ detach( obj : Observer ) : void
++ notifyObservers(  ) : void
++ showState(  ) : void
+}
+Interface Observer
+Interface Subject
+ConcreteSubject <|-- TheEconomy
+Subject <|.. ConcreteSubject
+ConcreteSubject ..> Observer : uses
+ConcreteObserver "0"--"1" ConcreteSubject
+ConcreteObserver <|-- Optimist
+ConcreteObserver <|-- Pessimist
+ConcreteSubject "0"--"*" Observer
+Observer <|.. ConcreteObserver
+@enduml

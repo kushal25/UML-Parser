@@ -1,0 +1,16 @@
+@startuml
+class D {
+}
+class A {
+- x : int
+- y : int[]
+}
+class B {
+}
+class C {
+}
+D "0"--"1" A
+A "1" -- "*" B
+A "0"--"*" D
+A "1" -- "1" C
+@enduml

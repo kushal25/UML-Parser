@@ -1,0 +1,11 @@
+@startuml
+class ClassA {
++ message : String
+- bark : String
++ testMethod(  ) : void
+}
+class ClassB {
+- hello : String
+}
+ClassA <|-- ClassB
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+class A2 {
+}
+class B1 {
+}
+class B2 {
+}
+class C2 {
++ test( a2 : A2 ) : void
+}
+class A1 {
+}
+class P {
+}
+class C1 {
++ test( a1 : A1 ) : void
+}
+Interface A1
+Interface A1
+Interface A2
+C2 ..> A2 : uses
+A1 <|.. B2
+A2 <|.. B2
+P <|-- B2
+P <|-- B1
+C1 ..> A1 : uses
+A1 <|.. B1
+@enduml

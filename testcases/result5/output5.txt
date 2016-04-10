@@ -1,0 +1,36 @@
+@startuml
+class ConcreteComponent {
++ operation(  ) : String
+}
+class Tester {
++ {static} main( args : String ) : void
+}
+class ConcreteDecoratorB {
+- addedState : String
++ ConcreteDecoratorB(c : Component)
++ operation(  ) : String
+}
+class Component {
++ operation(  ) : String
+}
+class ConcreteDecoratorA {
+- addedState : String
++ ConcreteDecoratorA(c : Component)
++ operation(  ) : String
+}
+class Decorator {
++ Decorator(c : Component)
++ operation(  ) : String
+}
+Interface Component
+Interface Component
+ConcreteDecoratorB ..> Component : uses
+Decorator "0"--"1" Component
+Component <|.. ConcreteComponent
+Decorator ..> Component : uses
+Decorator <|-- ConcreteDecoratorB
+Component <|.. Decorator
+Tester ..> Component : uses
+Decorator <|-- ConcreteDecoratorA
+ConcreteDecoratorA ..> Component : uses
+@enduml
