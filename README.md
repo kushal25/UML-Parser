@@ -36,10 +36,10 @@ have been added to POM.xml file</li>
 <ul>
 <li>http://plantuml.com/ </li>
 <li>Jar File : plantuml.jar </li>
-<li>Java Source Code UML diagram is generated using this tool. Graphviz software 
-is required to use this tool and generate diagrams. Graphviz must be installed in 
-the default directory of your system. 
-c:\Program Files\GraphvizX.XX (Windows) or /usr/bin/do </li>
+<li>Java Source Code UML diagram is generated using this tool.</li>
+<li>Graphviz software is required to use this tool and generate diagrams. Graphviz must be installed in 
+the default directory of your system. c:\Program Files\GraphvizX.XX (Windows) or /usr/bin/do. 
+Download Graphviz from:http://www.graphviz.org/ </li>
 </ul>
 
 <b>Note : All the above libraries are included in the project. You dont need to download anything.</b>
